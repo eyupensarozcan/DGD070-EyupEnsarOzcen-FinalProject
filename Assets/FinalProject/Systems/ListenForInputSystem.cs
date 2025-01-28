@@ -8,17 +8,17 @@ public class ListenForInputSystem : IExecuteSystem
     private InputContext _context;
     private float _horizontalInput;
     private float _verticalInput;
-    
-    
+
+
     public ListenForInputSystem(Contexts contexts)
     {
         _context = contexts.input ;
     }
     public void Execute()
     {
-        _horizontalInput = Input.GetAxis("Horizontal");
-        _verticalInput = Input.GetAxis("Vertical");
-        
+        _horizontalInput = Input.GetAxisRaw("Horizontal");
+        _verticalInput = Input.GetAxisRaw("Vertical");
+
         _context.ReplaceHorizontalInput(_horizontalInput);
         _context.ReplaceVerticalInput(_verticalInput);
         if (Input.GetMouseButtonDown(0))

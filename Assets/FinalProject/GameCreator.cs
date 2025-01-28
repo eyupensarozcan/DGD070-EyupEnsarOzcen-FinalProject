@@ -9,16 +9,16 @@ public class GameCreator : MonoBehaviour
     private InputFeature _playerInputFeature;
     private ConfigurationFeature _configurationFeature;
 
-    
+
 
     private void Start()
     {
         _contexts = Contexts.sharedInstance;
-        
+
         _configurationFeature = new ConfigurationFeature(_contexts);
         _movementFeature = new MovementFeature(_contexts);
         _playerInputFeature = new InputFeature(_contexts);
-        
+
         _configurationFeature.Initialize();
         _playerInputFeature.Initialize();
         _movementFeature.Initialize();
