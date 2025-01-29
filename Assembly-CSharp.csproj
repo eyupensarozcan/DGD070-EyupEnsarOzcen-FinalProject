@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>9.0</LangVersion>
-    <_TargetFrameworkDirectories>non_empty_path_generated_by_unity.rider.package</_TargetFrameworkDirectories>
-    <_FullFrameworkReferenceAssemblyPaths>non_empty_path_generated_by_unity.rider.package</_FullFrameworkReferenceAssemblyPaths>
+    <_TargetFrameworkDirectories>Jenny.Plugins.ReferenceAssemblyPathsPreProcessor</_TargetFrameworkDirectories>
+    <_FullFrameworkReferenceAssemblyPaths>Jenny.Plugins.ReferenceAssemblyPathsPreProcessor</_FullFrameworkReferenceAssemblyPaths>
     <DisableHandlePackageFileConflicts>true</DisableHandlePackageFileConflicts>
   </PropertyGroup>
   <PropertyGroup>
@@ -45,92 +45,127 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.50f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Generated/Input/Components/InputPlayerInputComponent.cs" />
+    <Compile Include="Assets/Generated/Config/Components/ConfigResolutionConfigComponent.cs" />
+    <Compile Include="Assets/Generated/Input/Components/InputVerticalInputComponent.cs" />
+    <Compile Include="Assets/Generated/Input/Components/InputHorizontalInputComponent.cs" />
+    <Compile Include="Assets/Generated/Game/Components/GameAllPadsTriggeredComponent.cs" />
+    <Compile Include="Assets/Generated/Game/Components/GamePlayerComponent.cs" />
+    <Compile Include="Assets/Generated/Game/Components/GamePositionComponent.cs" />
+    <Compile Include="Assets/Generated/Game/Components/GameDestroyedComponent.cs" />
+    <Compile Include="Assets/Generated/Game/Components/GamePlayerHealedComponent.cs" />
+    <Compile Include="Assets/Generated/Game/Components/GameViewComponent.cs" />
+    <Compile Include="Assets/Generated/Game/Components/GamePadComponent.cs" />
+    <Compile Include="Assets/Generated/Game/Components/GamePadTriggeredComponent.cs" />
+    <Compile Include="Assets/Generated/Game/Components/GamePlayerHealthComponent.cs" />
+    <Compile Include="Assets/Generated/Game/Components/GameMovingComponent.cs" />
+    <Compile Include="Assets/Generated/Game/Components/GameSpawnPlayerComponent.cs" />
+    <Compile Include="Assets/Generated/Game/Components/GameStopComponent.cs" />
+    <Compile Include="Assets/Generated/Game/Components/GameDampenerComponent.cs" />
+    <Compile Include="Assets/Generated/Game/Components/GameSpeedComponent.cs" />
+    <Compile Include="Assets/Generated/Game/Components/GameEnemyIdComponent.cs" />
+    <Compile Include="Assets/Generated/Game/Components/GamePlayerDamagedComponent.cs" />
+    <Compile Include="Assets/Generated/Game/Components/GameMoverComponent.cs" />
+    <Compile Include="Assets/Generated/Game/GameComponentsLookup.cs" />
+    <Compile Include="Assets/Generated/Input/InputComponentsLookup.cs" />
+    <Compile Include="Assets/Generated/Config/ConfigComponentsLookup.cs" />
+    <Compile Include="Assets/Generated/GameState/GameStateComponentsLookup.cs" />
+    <Compile Include="Assets/Generated/Game/GameAttribute.cs" />
+    <Compile Include="Assets/Generated/Input/InputAttribute.cs" />
+    <Compile Include="Assets/Generated/GameState/GameStateAttribute.cs" />
+    <Compile Include="Assets/Generated/Config/ConfigAttribute.cs" />
+    <Compile Include="Assets/Generated/Game/GameContext.cs" />
+    <Compile Include="Assets/Generated/Input/InputContext.cs" />
+    <Compile Include="Assets/Generated/GameState/GameStateContext.cs" />
+    <Compile Include="Assets/Generated/Config/ConfigContext.cs" />
+    <Compile Include="Assets/Generated/Game/GameMatcher.cs" />
+    <Compile Include="Assets/Generated/Input/InputMatcher.cs" />
+    <Compile Include="Assets/Generated/GameState/GameStateMatcher.cs" />
+    <Compile Include="Assets/Generated/Config/ConfigMatcher.cs" />
+    <Compile Include="Assets/Generated/Contexts.cs" />
+    <Compile Include="Assets/Generated/Game/GameEntity.cs" />
+    <Compile Include="Assets/Generated/Input/InputEntity.cs" />
+    <Compile Include="Assets/Generated/GameState/GameStateEntity.cs" />
+    <Compile Include="Assets/Generated/Config/ConfigEntity.cs" />
+    <Compile Include="Assets/Generated/Feature.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\FinalProject\MoveCube.cs" />
-    <Compile Include="Assets\Generated\Config\Components\ConfigResolutionConfigComponent.cs" />
-    <Compile Include="Assets\Generated\Game\Components\GameEnemyIdComponent.cs" />
-    <Compile Include="Assets\Generated\Config\ConfigComponentsLookup.cs" />
+    <Compile Include="Assets\FinalProject\Systems\WinDetectionSystem.cs" />
     <Compile Include="Assets\FinalProject\Component\PositionComponent.cs" />
-    <Compile Include="Assets\Generated\Input\InputContext.cs" />
     <Compile Include="Assets\FinalProject\Component\PlayerInputComponent.cs" />
-    <Compile Include="Assets\Generated\Game\Components\GameMoverComponent.cs" />
-    <Compile Include="Assets\Generated\Game\Components\GamePlayerHealedComponent.cs" />
-    <Compile Include="Assets\Generated\Game\GameAttribute.cs" />
-    <Compile Include="Assets\Generated\GameState\GameStateComponentsLookup.cs" />
     <Compile Include="Assets\Scripts\Features\PlayerHealthFeature.cs" />
-    <Compile Include="Assets\Generated\Game\Components\GamePlayerHealthComponent.cs" />
     <Compile Include="Assets\FinalProject\Features\ViewFeature.cs" />
     <Compile Include="Assets\FinalProject\Systems\MovementCompletedSystem.cs" />
     <Compile Include="Assets\FinalProject\GameCreator.cs" />
-    <Compile Include="Assets\Generated\Input\InputEntity.cs" />
-    <Compile Include="Assets\Generated\Game\Components\GameSpawnPlayerComponent.cs" />
     <Compile Include="Assets\FinalProject\Component\DestroyedComponent.cs" />
-    <Compile Include="Assets\Generated\Game\Components\GameDampenerComponent.cs" />
     <Compile Include="Assets\FinalProject\Systems\ListenForInputSystem.cs" />
-    <Compile Include="Assets\Generated\GameState\GameStateMatcher.cs" />
-    <Compile Include="Assets\Generated\Game\Components\GamePlayerDamagedComponent.cs" />
     <Compile Include="Assets\Scripts\Systems\ChangePlayerHealthSystem.cs" />
     <Compile Include="Assets\FinalProject\Component\ResolutionConfigComponent.cs" />
     <Compile Include="Assets\Scripts\Manager.cs" />
-    <Compile Include="Assets\Generated\Game\GameEntity.cs" />
     <Compile Include="Assets\FinalProject\Systems\SpawnPlayerSystem.cs" />
-    <Compile Include="Assets\Generated\Game\GameComponentsLookup.cs" />
-    <Compile Include="Assets\Generated\Config\ConfigContext.cs" />
+    <Compile Include="Assets\FinalProject\PadDetector.cs" />
+    <Compile Include="Assets\FinalProject\Systems\PadCountingSystem.cs" />
     <Compile Include="Assets\FinalProject\Systems\UpdatePositionsSystem.cs" />
-    <Compile Include="Assets\Generated\GameState\GameStateContext.cs" />
-    <Compile Include="Assets\Generated\Input\Components\InputHorizontalInputComponent.cs" />
     <Compile Include="Assets\FinalProject\Component\VerticalInputComponent.cs" />
     <Compile Include="Assets\Scripts\Components\PlayerHealedComponent.cs" />
-    <Compile Include="Assets\Generated\Input\Components\InputVerticalInputComponent.cs" />
-    <Compile Include="Assets\Generated\Contexts.cs" />
     <Compile Include="Assets\FinalProject\Features\InputFeature.cs" />
-    <Compile Include="Assets\Generated\Game\Components\GameViewComponent.cs" />
     <Compile Include="Assets\FinalProject\Systems\FindEntitySystem.cs" />
     <Compile Include="Assets\FinalProject\Systems\CreateObjectsSystem.cs" />
     <Compile Include="Assets\FinalProject\Component\HorizontalInputComponent.cs" />
-    <Compile Include="Assets\Generated\Config\ConfigMatcher.cs" />
-    <Compile Include="Assets\Generated\Game\Components\GameStopComponent.cs" />
     <Compile Include="Assets\FinalProject\Features\ConfigurationFeature.cs" />
-    <Compile Include="Assets\Generated\Config\ConfigEntity.cs" />
-    <Compile Include="Assets\Generated\Input\InputComponentsLookup.cs" />
-    <Compile Include="Assets\Generated\Game\GameMatcher.cs" />
     <Compile Include="Assets\FinalProject\Features\MoversFeature.cs" />
     <Compile Include="Assets\FinalProject\GameController.cs" />
     <Compile Include="Assets\FinalProject\Component\ViewComponent.cs" />
-    <Compile Include="Assets\Generated\GameState\GameStateAttribute.cs" />
+    <Compile Include="Assets\FinalProject\Component\AllPadsTriggeredComponent.cs" />
     <Compile Include="Assets\FinalProject\Features\MovementFeature.cs" />
-    <Compile Include="Assets\Generated\Input\Components\InputPlayerInputComponent.cs" />
     <Compile Include="Assets\FinalProject\PrefabReference.cs" />
     <Compile Include="Assets\FinalProject\Features\PlayerControlFeature.cs" />
+    <Compile Include="Assets\FinalProject\Component\PadComponent.cs" />
+    <Compile Include="Assets\FinalProject\Component\PadTriggeredComponent.cs" />
     <Compile Include="Assets\Scripts\Components\PlayerHealthComponent.cs" />
     <Compile Include="Assets\FinalProject\Systems\BoosterSystem.cs" />
     <Compile Include="Assets\FinalProject\Systems\ProcessInputSystem.cs" />
     <Compile Include="Assets\FinalProject\Component\MovingComponent.cs" />
-    <Compile Include="Assets\Generated\Feature.cs" />
-    <Compile Include="Assets\Generated\Game\Components\GameDestroyedComponent.cs" />
     <Compile Include="Assets\FinalProject\Component\SpawnPlayerComponent.cs" />
     <Compile Include="Assets\Scripts\Systems\CheckPlayerHealthSystem.cs" />
+    <Compile Include="Assets\FinalProject\Systems\PadInitializationSystem.cs" />
     <Compile Include="Assets\FinalProject\Component\StopComponent.cs" />
     <Compile Include="Assets\FinalProject\Component\PlayerComponent.cs" />
-    <Compile Include="Assets\Generated\Game\Components\GamePositionComponent.cs" />
-    <Compile Include="Assets\Generated\Game\Components\GameMovingComponent.cs" />
-    <Compile Include="Assets\Generated\Game\Components\GameSpeedComponent.cs" />
-    <Compile Include="Assets\Generated\Game\GameContext.cs" />
     <Compile Include="Assets\FinalProject\Systems\MovePlayerSystem.cs" />
-    <Compile Include="Assets\Generated\GameState\GameStateEntity.cs" />
-    <Compile Include="Assets\Generated\Input\InputAttribute.cs" />
+    <Compile Include="Assets\FinalProject\Features\PadInteractionFeature.cs" />
     <Compile Include="Assets\FinalProject\Component\DampenerComponent.cs" />
-    <Compile Include="Assets\Generated\Game\Components\GamePlayerComponent.cs" />
     <Compile Include="Assets\FinalProject\Component\SpeedComponent.cs" />
-    <Compile Include="Assets\Generated\Input\InputMatcher.cs" />
     <Compile Include="Assets\FinalProject\Component\EnemyIdComponent.cs" />
     <Compile Include="Assets\Scripts\Systems\CreatePlayerHealthSystem.cs" />
     <Compile Include="Assets\FinalProject\Systems\SetResolutionSystem.cs" />
     <Compile Include="Assets\Scripts\Components\PlayerDamagedComponent.cs" />
-    <Compile Include="Assets\Generated\Config\ConfigAttribute.cs" />
     <Compile Include="Assets\FinalProject\Systems\EntityCreatorSystem.cs" />
     <Compile Include="Assets\FinalProject\Component\MoverComponent.cs" />
     <Compile Include="Assets\FinalProject\Systems\MovementSystem.cs" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Entitas\LICENSE.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne.json" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.50f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -863,8 +898,6 @@
     <Reference Include="Unity.VisualScripting.Flow.Editor">
       <HintPath>D:\UnityProjectFiles\DGD070-EyupEnsarOzcen-FinalProject\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

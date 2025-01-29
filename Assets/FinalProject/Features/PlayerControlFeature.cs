@@ -10,7 +10,7 @@ public class PlayerControlFeature : Feature
 
     public PlayerControlFeature(Contexts contexts)
     {
-        //Add(new EntityCreatorSystem(contexts));
+       
         Add(new MovePlayerSystem(contexts));
     }
 
